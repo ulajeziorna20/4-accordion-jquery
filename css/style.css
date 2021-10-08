@@ -1,0 +1,23 @@
+#container {
+    border-top: 8px solid rgb(6, 6, 53);
+    border-left: 1px solid grey;
+    box-shadow: 8px 8px lightgrey;
+    padding: 5px;
+    
+}
+
+
+[class^="p"] {
+    display: none;
+}
+
+
+
+[class^="item"]::before {
+    content: "+ ";
+}
+
+
+.open::before {
+    content: "- ";
+}
